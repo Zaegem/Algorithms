@@ -1,4 +1,4 @@
-﻿using GXPEngine;
+using GXPEngine;
 using System;
 using System.Collections.Generic;
 
@@ -36,7 +36,7 @@ class OnGraphWayPointAgent : NodeGraphAgent
         _path = FindPath(CurrentNodePosition, pNode);
         if(_path != null)
         {
-
+            
             index = 0;
             Console.WriteLine("New path set.");
         } else
@@ -48,7 +48,7 @@ class OnGraphWayPointAgent : NodeGraphAgent
     protected override void Update()
     {
         // No path or reached the end of the path? Don't walk
-        if(_path == null || index >= _path.Count)
+        if (_path == null || index >= _path.Count)
         {
             return;
         }

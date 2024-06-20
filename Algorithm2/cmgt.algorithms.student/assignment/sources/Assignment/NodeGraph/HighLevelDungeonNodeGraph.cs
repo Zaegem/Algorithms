@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Drawing;
 
 /**
@@ -36,7 +36,7 @@ class HighLevelDungeonNodeGraph : NodeGraph
         nodes.Add(new Node(getRoomCenter(_dungeon.rooms[1])));
         //The getDoorCenter is a convenience method to calculate the screen space center of a door
         nodes.Add(new Node(getDoorCenter(_dungeon.doors[0])));
-
+        
 
         //create a connection between the two rooms and the door...
         AddConnection(nodes[0], nodes[2]);
